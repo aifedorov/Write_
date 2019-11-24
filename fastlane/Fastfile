@@ -1,0 +1,38 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# For a list of all available plugins, check out
+#
+#     https://docs.fastlane.tools/plugins/available-plugins
+#
+
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
+default_platform(:ios)
+
+platform :ios do
+  
+  desc "Building"
+  lane :build do
+    cocoapods
+    enable_automatic_code_signing
+    gym(
+      scheme: "Write_",
+      workspace: "Write_.xcworkspace",
+      export_options: {
+        method: "development"
+      },
+      clean: true
+    )
+  end
+
+  desc "Testing"
+  lane :run_unit_tests do
+    run_tests(scheme: "Write_Tests")
+  end
+end
