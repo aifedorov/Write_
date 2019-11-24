@@ -8,10 +8,13 @@ on:
 
 jobs:
   build:
-    name: Build and run tests
+    name: Build app
     runs-on: macOS-latest
     
     steps:
+    - name: Bundle installl
+      uses: "CultureHQ/actions-bundler@v1.0.0"
+        
     - name: Fastlane Action
       uses: maierj/fastlane-action@v1.0.0
       with:
