@@ -1,0 +1,25 @@
+//
+//  AppDelegate.swift
+//  Write_
+//
+//  Copyright © Personal. All rights reserved.
+//
+
+import UIKit
+
+class AppDelegate: UIResponder, UIApplicationDelegate {
+
+    var window: UIWindow?
+    lazy private var router = RootRouter()
+
+    func application(_ application: UIApplication,
+                     didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.makeKeyAndVisible()
+
+        // App structure
+        router.loadMainAppStructure()
+
+        return true
+    }
+}
