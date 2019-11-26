@@ -384,7 +384,7 @@
 			);
 			name = R.swift;
 			outputPaths = (
-				$SRCROOT/Write_/Resources/Generated/R.generated.swift,
+				"$SRCROOT/Write_/Resources/Generated/R.generated.swift",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
