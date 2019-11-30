@@ -1,24 +1,51 @@
 PODS:
+  - EasyDi (1.6.1)
   - R.swift (5.0.0):
     - R.swift.Library (~> 5.0.0)
   - R.swift.Library (5.0.1)
+  - RxBlocking (5.0.1):
+    - RxSwift (~> 5)
+  - RxCocoa (5.0.1):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxRelay (5.0.1):
+    - RxSwift (~> 5)
+  - RxSwift (5.0.1)
+  - RxTest (5.0.1):
+    - RxSwift (~> 5)
   - SwiftLint (0.31.0)
 
 DEPENDENCIES:
+  - EasyDi
   - R.swift (= 5.0.0)
+  - RxBlocking (~> 5.0.0)
+  - RxCocoa (~> 5.0.0)
+  - RxTest (~> 5.0.0)
   - SwiftLint (= 0.31.0)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - EasyDi
     - R.swift
     - R.swift.Library
+    - RxBlocking
+    - RxCocoa
+    - RxRelay
+    - RxSwift
+    - RxTest
     - SwiftLint
 
 SPEC CHECKSUMS:
+  EasyDi: 3d7d4c0d3ad2d78b3ff22d4755590d32945f69cc
   R.swift: f88c7d7d48a2be4dffa132dde1b3d389620310eb
   R.swift.Library: cfe85d569d9bae6cb262922db130e7c3a7a5fad1
+  RxBlocking: c5e090f42d046df8b0e7752742510f349963710f
+  RxCocoa: e741b9749968e8a143e2b787f1dfbff2b63d0a5c
+  RxRelay: 89d54507f4fd4d969e6ec1d4bd7f3673640b4640
+  RxSwift: e2dc62b366a3adf6a0be44ba9f405efd4c94e0c4
+  RxTest: 0132f952a61da82d5233abedaa559df91e5330e5
   SwiftLint: 7a0227733d786395817373b2d0ca799fd0093ff3
 
-PODFILE CHECKSUM: 61345992c252b3245181d73a809fc9ce61e7b6af
+PODFILE CHECKSUM: a044199453a87a9f30c35fb9bda7f656bcf74e2f
 
 COCOAPODS: 1.5.3

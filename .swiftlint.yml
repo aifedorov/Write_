@@ -1,6 +1,8 @@
 disabled_rules:
-  - todo
+  - force_cast
+
 opt_in_rules:
+  - todo
   - attributes
   - closure_end_indentation
   - closure_spacing
@@ -20,7 +22,6 @@ opt_in_rules:
   - single_test_class
   - sorted_imports
   - switch_case_on_newline
-  - trailing_closure
   - unneeded_parentheses_in_closure_argument
 excluded:
   - Carthage
@@ -34,3 +35,4 @@ identifier_name:
     - at
     - of
     - up
+    - vc
