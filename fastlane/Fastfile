@@ -24,9 +24,8 @@ platform :ios do
     gym(
       scheme: "Write_",
       workspace: "Write_.xcworkspace",
-      export_options: {
-        method: "development"
-      },
+      export_method: "development",
+      export_xcargs: "-allowProvisioningUpdates",
       clean: true
     )
   end
