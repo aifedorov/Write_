@@ -19,8 +19,8 @@ platform :ios do
   
   desc "Building"
   lane :build do
-    cocoapods
     enable_automatic_code_signing
+    cocoapods
     gym(
       scheme: "Write_",
       workspace: "Write_.xcworkspace",
