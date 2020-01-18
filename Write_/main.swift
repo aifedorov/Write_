@@ -12,7 +12,7 @@ import UIKit
 ///
 /// - Returns: True if the app is opened by the test target
 private func isRunningTests() -> Bool {
-    return NSClassFromString("XCTestCase") != nil
+    NSClassFromString("XCTestCase") != nil
 }
 
 /// Gets the right AppDelegate class for the current environment.
@@ -21,7 +21,7 @@ private func isRunningTests() -> Bool {
 ///
 /// - Returns: TestsAppDelegate if the app was opened by the test target. Normal AppDelegate otherwise.
 private func getDelegateClassName() -> String {
-    return isRunningTests() ? NSStringFromClass(TestsAppDelegate.self) : NSStringFromClass(AppDelegate.self)
+    isRunningTests() ? NSStringFromClass(TestsAppDelegate.self) : NSStringFromClass(AppDelegate.self)
 }
 
 /// Load the actual app with the right app delegate depending on environment

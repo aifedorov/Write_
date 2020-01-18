@@ -16,6 +16,8 @@
 		C90395241FC622D2006F1DC0 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90395231FC622D2006F1DC0 /* main.swift */; };
 		C90395261FC62399006F1DC0 /* TestsAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90395251FC62399006F1DC0 /* TestsAppDelegate.swift */; };
 		C90395271FC62425006F1DC0 /* TestsAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90395251FC62399006F1DC0 /* TestsAppDelegate.swift */; };
+		F84EAF3823D34D3500C193E3 /* LogoImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84EAF3723D34D3500C193E3 /* LogoImageView.swift */; };
+		F8877DEA23D317720038AC88 /* UIColor+colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8877DE923D317720038AC88 /* UIColor+colors.swift */; };
 		F8E095A62392B61A00D1C307 /* DisposableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E095A52392B61A00D1C307 /* DisposableViewController.swift */; };
 		F8E095A92392CE7400D1C307 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E095A82392CE7400D1C307 /* Coordinator.swift */; };
 		F8E095AB2392CF9500D1C307 /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E095AA2392CF9500D1C307 /* Storyboarded.swift */; };
@@ -23,6 +25,7 @@
 		F8E095AF2392D26300D1C307 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E095AE2392D26300D1C307 /* MainTabBarController.swift */; };
 		F8E095B92392DCEF00D1C307 /* DocumentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E095B82392DCEF00D1C307 /* DocumentsViewController.swift */; };
 		F8E095BB2392DD2A00D1C307 /* DocumentsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E095BA2392DD2A00D1C307 /* DocumentsCoordinator.swift */; };
+		F8E2606723D333EB0080D45B /* DocumentsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8E2606623D333EB0080D45B /* DocumentsViewController.storyboard */; };
 		FCB2C7CB1F57127800481080 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FCB2C7CA1F57127800481080 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +58,8 @@
 		9FFF897962AC7A548BB40851 /* Pods_Write_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Write_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C90395231FC622D2006F1DC0 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		C90395251FC62399006F1DC0 /* TestsAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestsAppDelegate.swift; sourceTree = "<group>"; };
+		F84EAF3723D34D3500C193E3 /* LogoImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoImageView.swift; sourceTree = "<group>"; };
+		F8877DE923D317720038AC88 /* UIColor+colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+colors.swift"; sourceTree = "<group>"; };
 		F8E095A52392B61A00D1C307 /* DisposableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisposableViewController.swift; sourceTree = "<group>"; };
 		F8E095A82392CE7400D1C307 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Coordinator.swift; path = Write_/Core/Protocols/Coordinator.swift; sourceTree = SOURCE_ROOT; };
 		F8E095AA2392CF9500D1C307 /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Storyboarded.swift; path = Write_/Storyboarded.swift; sourceTree = SOURCE_ROOT; };
@@ -62,6 +67,7 @@
 		F8E095AE2392D26300D1C307 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MainTabBarController.swift; path = Write_/Modules/Main/MainTabBarController.swift; sourceTree = SOURCE_ROOT; };
 		F8E095B82392DCEF00D1C307 /* DocumentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DocumentsViewController.swift; path = Write_/Modules/DocumentsViewController.swift; sourceTree = SOURCE_ROOT; };
 		F8E095BA2392DD2A00D1C307 /* DocumentsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentsCoordinator.swift; sourceTree = "<group>"; };
+		F8E2606623D333EB0080D45B /* DocumentsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DocumentsViewController.storyboard; sourceTree = "<group>"; };
 		F938FFAF83EDFE824B8767A0 /* Pods-Write_Tests.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Write_Tests.staging.xcconfig"; path = "Pods/Target Support Files/Pods-Write_Tests/Pods-Write_Tests.staging.xcconfig"; sourceTree = "<group>"; };
 		F95AFC8F321A33D261DFEFB7 /* Pods-Write_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Write_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Write_Tests/Pods-Write_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		FCB2C7CA1F57127800481080 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
@@ -119,6 +125,7 @@
 		2A1E77351F384BFC006C84D4 /* Write_ */ = {
 			isa = PBXGroup;
 			children = (
+				F84EAF3623D34D1400C193E3 /* WriteUIKit */,
 				2AB31D9E1F38740A00B7D1F3 /* Models */,
 				2AB31D9F1F38741400B7D1F3 /* Modules */,
 				2AFB310A1F385A20009C4586 /* Core */,
@@ -191,6 +198,7 @@
 		2AB31DA41F38745300B7D1F3 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				F8877DE923D317720038AC88 /* UIColor+colors.swift */,
 				F8E095AC2392D1C200D1C307 /* Application+Extensions.swift */,
 			);
 			path = Extensions;
@@ -264,6 +272,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		F84EAF3623D34D1400C193E3 /* WriteUIKit */ = {
+			isa = PBXGroup;
+			children = (
+				F84EAF3723D34D3500C193E3 /* LogoImageView.swift */,
+			);
+			path = WriteUIKit;
+			sourceTree = "<group>";
+		};
 		F8E0959E2392765800D1C307 /* Main */ = {
 			isa = PBXGroup;
 			children = (
@@ -293,6 +309,7 @@
 			isa = PBXGroup;
 			children = (
 				F8E095B82392DCEF00D1C307 /* DocumentsViewController.swift */,
+				F8E2606623D333EB0080D45B /* DocumentsViewController.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -306,8 +323,9 @@
 			buildPhases = (
 				C7CCDA0E35CF5F4D8154553A /* [CP] Check Pods Manifest.lock */,
 				553FC23A2140470C001D9362 /* R.swift */,
-				2A1E772F1F384BFC006C84D4 /* Sources */,
+				F8877DE823D313970038AC88 /* SwiftFormat */,
 				FC9CA61F1F83C1B700B8EB94 /* SwiftLint */,
+				2A1E772F1F384BFC006C84D4 /* Sources */,
 				2A1E77301F384BFC006C84D4 /* Frameworks */,
 				2A1E77311F384BFC006C84D4 /* Resources */,
 				4F910391D913CA69D50C7547 /* [CP] Embed Pods Frameworks */,
@@ -389,6 +407,7 @@
 			files = (
 				FCB2C7CB1F57127800481080 /* Localizable.strings in Resources */,
 				2A1E77411F384BFD006C84D4 /* LaunchScreen.storyboard in Resources */,
+				F8E2606723D333EB0080D45B /* DocumentsViewController.storyboard in Resources */,
 				2A1E773E1F384BFD006C84D4 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -412,7 +431,6 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Write_/Pods-Write_-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/EasyDi/EasyDi.framework",
 				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxRelay/RxRelay.framework",
@@ -422,7 +440,6 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EasyDi.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rswift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRelay.framework",
@@ -493,6 +510,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		F8877DE823D313970038AC88 /* SwiftFormat */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftFormat;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftFormat/CommandLineTool/swiftformat\" \"$SRCROOT\"\n";
+		};
 		FC9CA61F1F83C1B700B8EB94 /* SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -505,7 +540,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "${PODS_ROOT}/SwiftLint/swiftlint";
+			shellScript = "${PODS_ROOT}/SwiftLint/swiftlint\n";
 		};
 		FE6A3BEFF03D148A04A9F48C /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -541,8 +576,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F8E095AB2392CF9500D1C307 /* Storyboarded.swift in Sources */,
+				F8877DEA23D317720038AC88 /* UIColor+colors.swift in Sources */,
 				C90395241FC622D2006F1DC0 /* main.swift in Sources */,
 				2A1E77371F384BFC006C84D4 /* AppDelegate.swift in Sources */,
+				F84EAF3823D34D3500C193E3 /* LogoImageView.swift in Sources */,
 				553FC23C214047CB001D9362 /* R.generated.swift in Sources */,
 				C90395271FC62425006F1DC0 /* TestsAppDelegate.swift in Sources */,
 				F8E095A62392B61A00D1C307 /* DisposableViewController.swift in Sources */,
@@ -707,11 +744,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 97857562T4;
 				INFOPLIST_FILE = Write_/SupportingFiles/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "$(inherited) -Xfrontend -warn-long-expression-type-checking=500";
 				PRODUCT_BUNDLE_IDENTIFIER = ru.personal.write;
 				PRODUCT_NAME = Write;
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -723,11 +762,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 97857562T4;
 				INFOPLIST_FILE = Write_/SupportingFiles/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = ru.personal.write;
 				PRODUCT_NAME = Write;
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -836,11 +877,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 97857562T4;
 				INFOPLIST_FILE = Write_/SupportingFiles/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = ru.personal.write;
 				PRODUCT_NAME = Write;
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Staging;
 		};

@@ -10,6 +10,6 @@ import UIKit
 
 extension UIApplication {
     static var isInUITest: Bool {
-        return ProcessInfo.processInfo.environment["isUITest"] != nil
+        ProcessInfo.processInfo.environment["isUITest"] != nil
     }
 }

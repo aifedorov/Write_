@@ -8,10 +8,10 @@
 
 import UIKit
 
-final class DocumentsViewController: DisposableViewController {
-
+final class DocumentsViewController: DisposableViewController, Storyboarded {
     override func viewDidLoad() {
         super.viewDidLoad()
-        // TODO:
+        view.backgroundColor = UIColor.black
+        navigationItem.titleView = LogoImageView(tintColor: .white)
     }
 }

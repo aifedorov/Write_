@@ -8,13 +8,17 @@
 
 import UIKit
 
-final class MainTabBarController: DisposableTabBarController, Storyboarded {
-
+final class MainTabBarController: DisposableTabBarController {
     private let documentsCoordinator = DocumentsCoordinator(navigationController: UINavigationController())
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         documentsCoordinator.start()
         viewControllers = [documentsCoordinator.navigationController]
+        
+        tabBar.tintColor = .white
+        tabBar.backgroundColor = UIColor.Background.dark
+        tabBar.barTintColor = UIColor.Background.dark
+        tabBar.isTranslucent = false
     }
 }
