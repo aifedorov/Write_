@@ -1,6 +1,6 @@
 # Write_
 
-Supports: iOS 10.x and above
+Supports: iOS 11.x and above
 
 ## Branches:
 
