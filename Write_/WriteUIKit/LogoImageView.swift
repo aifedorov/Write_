@@ -11,8 +11,10 @@ import UIKit
 final class LogoImageView: UIImageView {
     init(tintColor: UIColor) {
         let image = R.image.logo().unsafelyUnwrapped
-        let newImage = UIImage.resize(image: image, targetSize: CGSize(width: 80, height: 20)).withRenderingMode(.alwaysTemplate)
-
+        let size = CGSize(width: 80, height: 20)
+        let newImage = UIImage.resize(image: image,
+                                      targetSize: size).withRenderingMode(.alwaysTemplate)
+        
         super.init(image: newImage)
         self.tintColor = tintColor
         contentMode = .scaleAspectFit

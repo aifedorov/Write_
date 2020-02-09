@@ -1,5 +1,5 @@
 //
-//  DisposableViewController.swift
+//  ViewController.swift
 //  Write_
 //
 //  Created by Александр Федоров on 30.11.2019.
@@ -9,14 +9,14 @@
 import RxSwift
 import UIKit
 
-class DisposableViewController: UIViewController {
+class ViewController: UIViewController {
     private var disposeBag = DisposeBag()
 }
 
-class DisposableTabBarController: UITabBarController {
+class TabBarController: UITabBarController {
     private var disposeBag = DisposeBag()
 }
 
-class DisposableNavigationController: UINavigationController {
+class NavigationController: UINavigationController {
     private var disposeBag = DisposeBag()
 }

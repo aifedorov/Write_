@@ -8,7 +8,9 @@
 
 import UIKit
 
-final class DocumentsViewController: DisposableViewController, Storyboarded {
+final class DocumentsViewController: ViewController, Storyboarded {
+    var viewModel: DocumentsViewModel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor.black

@@ -17,8 +17,6 @@ final class DocumentsCoordinator: Coordinator {
     }
     
     func start() {
-        debugPrint(navigationController.navigationItem)
-        
         navigationController.navigationBar.isTranslucent = true
         navigationController.navigationBar.setBackgroundImage(UIImage(), for: .default)
         navigationController.navigationBar.shadowImage = UIImage()
@@ -27,6 +25,6 @@ final class DocumentsCoordinator: Coordinator {
                                                        image: R.image.documentsTabIcon(),
                                                        tag: 0)
         
-        navigationController.viewControllers = [DocumentsViewController.instantiate()]
+        navigationController.viewControllers = [DocumentsAssembly.makeViewController()]
     }
 }

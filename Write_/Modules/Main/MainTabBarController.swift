@@ -8,7 +8,7 @@
 
 import UIKit
 
-final class MainTabBarController: DisposableTabBarController {
+final class MainTabBarController: TabBarController {
     private let documentsCoordinator = DocumentsCoordinator(navigationController: UINavigationController())
     
     override func viewDidLoad() {
