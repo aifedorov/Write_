@@ -8,9 +8,10 @@
 
 import UIKit
 
-class DocumentPlaceholderCell: UICollectionViewCell {
+final class DocumentPlaceholderCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        layer.cornerRadius = 10
+        backgroundColor = UIColor.DocumentPlaceholder.background
     }
 }

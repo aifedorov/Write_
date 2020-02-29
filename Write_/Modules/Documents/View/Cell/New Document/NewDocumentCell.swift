@@ -11,6 +11,6 @@ import UIKit
 class NewDocumentCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        backgroundView = UIImageView(image: R.image.newDocumentBackground())
     }
 }

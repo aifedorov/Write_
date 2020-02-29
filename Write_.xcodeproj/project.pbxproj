@@ -26,6 +26,10 @@
 		F85FD8CC23F00F930025EBAB /* NewDocumentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F85FD8CA23F00F930025EBAB /* NewDocumentCell.xib */; };
 		F85FD8D023F00FB70025EBAB /* DocumentPlaceholderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85FD8CE23F00FB70025EBAB /* DocumentPlaceholderCell.swift */; };
 		F85FD8D123F00FB70025EBAB /* DocumentPlaceholderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F85FD8CF23F00FB70025EBAB /* DocumentPlaceholderCell.xib */; };
+		F85FD8EF23F688DD0025EBAB /* PlayfairDisplay-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F85FD8EB23F688DD0025EBAB /* PlayfairDisplay-BoldItalic.ttf */; };
+		F85FD8F023F688DD0025EBAB /* PlayfairDisplay-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F85FD8EC23F688DD0025EBAB /* PlayfairDisplay-Regular.ttf */; };
+		F85FD8F123F688DD0025EBAB /* PlayfairDisplay-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F85FD8ED23F688DD0025EBAB /* PlayfairDisplay-Italic.ttf */; };
+		F85FD8F223F688DD0025EBAB /* PlayfairDisplay-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F85FD8EE23F688DD0025EBAB /* PlayfairDisplay-Bold.ttf */; };
 		F8877DEA23D317720038AC88 /* UIColor+colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8877DE923D317720038AC88 /* UIColor+colors.swift */; };
 		F8E095A62392B61A00D1C307 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E095A52392B61A00D1C307 /* ViewController.swift */; };
 		F8E095A92392CE7400D1C307 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E095A82392CE7400D1C307 /* Coordinator.swift */; };
@@ -77,6 +81,10 @@
 		F85FD8CA23F00F930025EBAB /* NewDocumentCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewDocumentCell.xib; sourceTree = "<group>"; };
 		F85FD8CE23F00FB70025EBAB /* DocumentPlaceholderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentPlaceholderCell.swift; sourceTree = "<group>"; };
 		F85FD8CF23F00FB70025EBAB /* DocumentPlaceholderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DocumentPlaceholderCell.xib; sourceTree = "<group>"; };
+		F85FD8EB23F688DD0025EBAB /* PlayfairDisplay-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-BoldItalic.ttf"; sourceTree = "<group>"; };
+		F85FD8EC23F688DD0025EBAB /* PlayfairDisplay-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-Regular.ttf"; sourceTree = "<group>"; };
+		F85FD8ED23F688DD0025EBAB /* PlayfairDisplay-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-Italic.ttf"; sourceTree = "<group>"; };
+		F85FD8EE23F688DD0025EBAB /* PlayfairDisplay-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-Bold.ttf"; sourceTree = "<group>"; };
 		F8877DE923D317720038AC88 /* UIColor+colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+colors.swift"; sourceTree = "<group>"; };
 		F8E095A52392B61A00D1C307 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F8E095A82392CE7400D1C307 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Coordinator.swift; path = Write_/Core/Protocols/Coordinator.swift; sourceTree = SOURCE_ROOT; };
@@ -185,6 +193,10 @@
 		2AB31DA01F38742400B7D1F3 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				F85FD8EE23F688DD0025EBAB /* PlayfairDisplay-Bold.ttf */,
+				F85FD8EB23F688DD0025EBAB /* PlayfairDisplay-BoldItalic.ttf */,
+				F85FD8ED23F688DD0025EBAB /* PlayfairDisplay-Italic.ttf */,
+				F85FD8EC23F688DD0025EBAB /* PlayfairDisplay-Regular.ttf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -465,9 +477,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				FCB2C7CB1F57127800481080 /* Localizable.strings in Resources */,
+				F85FD8F223F688DD0025EBAB /* PlayfairDisplay-Bold.ttf in Resources */,
 				F85FD8D123F00FB70025EBAB /* DocumentPlaceholderCell.xib in Resources */,
+				F85FD8F023F688DD0025EBAB /* PlayfairDisplay-Regular.ttf in Resources */,
 				F85FD8CC23F00F930025EBAB /* NewDocumentCell.xib in Resources */,
 				F85FD8C623F00F560025EBAB /* DocumentCell.xib in Resources */,
+				F85FD8F123F688DD0025EBAB /* PlayfairDisplay-Italic.ttf in Resources */,
+				F85FD8EF23F688DD0025EBAB /* PlayfairDisplay-BoldItalic.ttf in Resources */,
 				2A1E77411F384BFD006C84D4 /* LaunchScreen.storyboard in Resources */,
 				F8E2606723D333EB0080D45B /* DocumentsViewController.storyboard in Resources */,
 				2A1E773E1F384BFD006C84D4 /* Assets.xcassets in Resources */,

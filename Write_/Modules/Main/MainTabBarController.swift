@@ -17,8 +17,8 @@ final class MainTabBarController: TabBarController {
         viewControllers = [documentsCoordinator.navigationController]
         
         tabBar.tintColor = .white
-        tabBar.backgroundColor = UIColor.Background.dark
-        tabBar.barTintColor = UIColor.Background.dark
+        tabBar.backgroundColor = UIColor.TabBar.tint
+        tabBar.barTintColor = UIColor.TabBar.tint
         tabBar.isTranslucent = false
     }
 }

@@ -8,9 +8,36 @@
 
 import UIKit
 
-class DocumentCell: UICollectionViewCell {
+final class DocumentCell: UICollectionViewCell {
+    @IBOutlet private var dateLabel: UILabel!
+    @IBOutlet private var titleLabel: UILabel!
+    @IBOutlet private var pageCountLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        
+        contentView.backgroundColor = UIColor.DocumentCell.backgroud
+        
+        titleLabel.font = R.font.playfairDisplayBold(size: 17)
+        titleLabel.textColor = UIColor.DocumentCell.title
+        
+        dateLabel.font = UIFont.systemFont(ofSize: 11)
+        titleLabel.textColor = UIColor.DocumentCell.date
+        
+        pageCountLabel.font = UIFont.systemFont(ofSize: 11)
+        titleLabel.textColor = UIColor.DocumentCell.pageCount
+        
+        layer.cornerRadius = 10
+    }
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        reset()
+    }
+    
+    private func reset() {
+        titleLabel.text = nil
+        dateLabel.text = nil
+        pageCountLabel.text = nil
     }
 }

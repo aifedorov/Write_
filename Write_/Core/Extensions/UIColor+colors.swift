@@ -9,8 +9,19 @@
 import UIKit
 
 extension UIColor {
-    enum Background {
-        static let dark = UIColor(hexString: "#151515", alpha: 0.95)
+    enum TabBar {
+        static let tint = UIColor(hexString: "#151515", alpha: 0.95)
+    }
+    
+    enum DocumentPlaceholder {
+        static let background = UIColor(hexString: "#FFFFFF", alpha: 0.05)
+    }
+    
+    enum DocumentCell {
+        static let date = UIColor(hexString: "#2F2E2B", alpha: 0.5)
+        static let title = UIColor(hexString: "#000000")
+        static let pageCount = UIColor(hexString: "#2F2E2B", alpha: 0.5)
+        static let backgroud = UIColor(hexString: "#FFFFFF", alpha: 0.95)
     }
 }
 
