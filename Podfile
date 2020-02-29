@@ -9,21 +9,27 @@ inhibit_all_warnings!
 
 target 'Write_' do
 
-  pod 'R.swift', '5.0.0'
-  pod 'SwiftLint', '0.31.0'
+  pod 'R.swift', '~> 5.0.0'
+  pod 'RxCocoa', '~> 5.0.0'
+  pod 'SwiftLint', '~> 0.31.0'
+  pod 'SwiftFormat/CLI', '~> 0.44.0'
 
   target 'Write_Tests' do
     inherit! :search_paths
+
+    pod 'RxBlocking', '~> 5.0.0'
+    pod 'RxTest', '~> 5.0.0'
   end
 end
 
 post_install do |installer|
-  installer.pods_project.targets.each do |target|
-    target.build_configurations.each do |config|
-      config.build_settings['EXPANDED_CODE_SIGN_IDENTITY'] = ""
-      config.build_settings['CODE_SIGNING_REQUIRED'] = "NO"
-      config.build_settings['CODE_SIGNING_ALLOWED'] = "NO"
-      config.build_settings['SWIFT_VERSION'] = '5.0'
-    end
-  end
+   installer.pods_project.targets.each do |target|
+      if target.name == 'RxSwift'
+         target.build_configurations.each do |config|
+            if config.name == 'Debug'
+               config.build_settings['OTHER_SWIFT_FLAGS'] ||= ['-D', 'TRACE_RESOURCES']
+            end
+         end
+      end
+   end
 end

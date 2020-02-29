@@ -1,6 +1,11 @@
 disabled_rules:
-  - todo
+  - force_cast
+  - trailing_whitespace
+  - trailing_comma
+  - force_unwrapping
+
 opt_in_rules:
+  - todo
   - attributes
   - closure_end_indentation
   - closure_spacing
@@ -9,7 +14,6 @@ opt_in_rules:
   - explicit_init
   - fatal_error_message
   - first_where
-  - force_unwrapping
   - multiline_parameters
   - operator_usage_whitespace
   - overridden_super_call
@@ -20,7 +24,6 @@ opt_in_rules:
   - single_test_class
   - sorted_imports
   - switch_case_on_newline
-  - trailing_closure
   - unneeded_parentheses_in_closure_argument
 excluded:
   - Carthage
@@ -34,3 +37,4 @@ identifier_name:
     - at
     - of
     - up
+    - vc
