@@ -1,4 +1,5 @@
 PODS:
+  - Differentiator (4.0.1)
   - R.swift (5.0.0):
     - R.swift.Library (~> 5.0.0)
   - R.swift.Library (5.0.1)
@@ -7,6 +8,10 @@ PODS:
   - RxCocoa (5.0.0):
     - RxRelay (~> 5)
     - RxSwift (~> 5)
+  - RxDataSources (4.0.1):
+    - Differentiator (~> 4.0)
+    - RxCocoa (~> 5.0)
+    - RxSwift (~> 5.0)
   - RxRelay (5.0.1):
     - RxSwift (~> 5)
   - RxSwift (5.0.1)
@@ -19,16 +24,19 @@ DEPENDENCIES:
   - R.swift (~> 5.0.0)
   - RxBlocking (~> 5.0.0)
   - RxCocoa (~> 5.0.0)
+  - RxDataSources (~> 4.0.0)
   - RxTest (~> 5.0.0)
   - SwiftFormat/CLI (~> 0.44.0)
   - SwiftLint (~> 0.31.0)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - Differentiator
     - R.swift
     - R.swift.Library
     - RxBlocking
     - RxCocoa
+    - RxDataSources
     - RxRelay
     - RxSwift
     - RxTest
@@ -36,16 +44,18 @@ SPEC REPOS:
     - SwiftLint
 
 SPEC CHECKSUMS:
+  Differentiator: 886080237d9f87f322641dedbc5be257061b0602
   R.swift: f88c7d7d48a2be4dffa132dde1b3d389620310eb
   R.swift.Library: cfe85d569d9bae6cb262922db130e7c3a7a5fad1
   RxBlocking: c5e090f42d046df8b0e7752742510f349963710f
   RxCocoa: fcf32050ac00d801f34a7f71d5e8e7f23026dcd8
+  RxDataSources: efee07fa4de48477eca0a4611e6d11e2da9c1114
   RxRelay: 89d54507f4fd4d969e6ec1d4bd7f3673640b4640
   RxSwift: e2dc62b366a3adf6a0be44ba9f405efd4c94e0c4
   RxTest: 0132f952a61da82d5233abedaa559df91e5330e5
   SwiftFormat: 180a4d17bcfa2c9f61b202dac7dddd2087ff920a
   SwiftLint: 7a0227733d786395817373b2d0ca799fd0093ff3
 
-PODFILE CHECKSUM: def0edbd135b2c49e268b9f3fa6b7f5a8855ff55
+PODFILE CHECKSUM: 511bb69df494e2062e31e09a147ba8bcceef7494
 
 COCOAPODS: 1.5.3

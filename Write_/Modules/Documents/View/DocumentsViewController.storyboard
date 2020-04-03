@@ -37,6 +37,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Feo-Z1-ytk"/>
                     </view>
+                    <connections>
+                        <outlet property="collectionView" destination="cZR-9C-VJb" id="j3n-SV-Awn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="heB-Vo-PdE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

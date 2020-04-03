@@ -11,6 +11,8 @@ target 'Write_' do
 
   pod 'R.swift', '~> 5.0.0'
   pod 'RxCocoa', '~> 5.0.0'
+  pod 'RxDataSources', '~> 4.0.0'
+
   pod 'SwiftLint', '~> 0.31.0'
   pod 'SwiftFormat/CLI', '~> 0.44.0'
 

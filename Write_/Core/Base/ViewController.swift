@@ -10,7 +10,7 @@ import RxSwift
 import UIKit
 
 class ViewController: UIViewController {
-    private var disposeBag = DisposeBag()
+    var disposeBag = DisposeBag()
 }
 
 class TabBarController: UITabBarController {
