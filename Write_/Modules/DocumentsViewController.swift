@@ -8,9 +8,10 @@
 
 import RxCocoa
 import RxDataSources
+import RxSwift
 import UIKit
 
-final class DocumentsViewController: ViewController, Storyboarded {
+final class DocumentsViewController: UIViewController, Storyboarded {
     // MARK: Outlets
     
     @IBOutlet private var collectionView: UICollectionView!
@@ -19,6 +20,10 @@ final class DocumentsViewController: ViewController, Storyboarded {
     
     var viewModel: DocumentsViewModel!
     
+    // MARK: Private Properties
+    
+    private let disposeBag = DisposeBag()
+    
     // MARK: Lifecycle
     
     override func viewDidLoad() {
@@ -26,7 +31,7 @@ final class DocumentsViewController: ViewController, Storyboarded {
         view.backgroundColor = UIColor.black
         navigationItem.titleView = LogoImageView(tintColor: .white)
         
-        collectionView.register(DocumentPlaceholderCell.self)
+        collectionView.register([DocumentPlaceholderCell.self, DocumentCell.self, NewDocumentCell.self])
         collectionView.collectionViewLayout = GridFlowLayout()
         collectionView.backgroundColor = .black
         
@@ -35,26 +40,23 @@ final class DocumentsViewController: ViewController, Storyboarded {
     
     private func bindCollectionView() {
         viewModel.items
-            .bind(to: collectionView.rx.items) { collectionView, row, _ in
+            .bind(to: collectionView.rx.items) { (collectionView, row: Int, item: DocumentItem) in
                 let indexPath = IndexPath(row: row, section: 0)
-                let cell = collectionView.dequeueReusableCell(DocumentPlaceholderCell.self, indexPath: indexPath)
-                return cell
+                switch item.type {
+                case .create:
+                    let cell = collectionView.dequeueReusableCell(NewDocumentCell.self, indexPath: indexPath)
+                    return cell
+                    
+                case .placeholder:
+                    let cell = collectionView.dequeueReusableCell(DocumentPlaceholderCell.self, indexPath: indexPath)
+                    return cell
+                    
+                case let .document(displayData):
+                    let cell = collectionView.dequeueReusableCell(DocumentCell.self, indexPath: indexPath)
+                    cell.configure(displayData)
+                    return cell
+                }
             }
             .disposed(by: disposeBag)
-    }
-}
-
-// MARK: - UICollectionView
-
-extension UICollectionView {
-    func register(_ anyClass: AnyClass) {
-        let reuseIdentifier = String(describing: anyClass.self)
-        let nib = UINib(nibName: reuseIdentifier, bundle: nil)
-        register(nib, forCellWithReuseIdentifier: reuseIdentifier)
-    }
-    
-    func dequeueReusableCell<T: UICollectionViewCell>(_ anyClass: T.Type, indexPath: IndexPath) -> T {
-        let reuseIdentifier = String(describing: anyClass.self)
-        return dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! T
     }
 }

@@ -8,7 +8,7 @@
 
 import UIKit
 
-final class MainTabBarController: TabBarController {
+final class MainTabBarController: UITabBarController {
     private let documentsCoordinator = DocumentsCoordinator(navigationController: UINavigationController())
     
     override func viewDidLoad() {
