@@ -40,23 +40,27 @@ final class DocumentsViewController: UIViewController, Storyboarded {
     
     private func bindCollectionView() {
         viewModel.items
-            .bind(to: collectionView.rx.items) { (collectionView, row: Int, item: DocumentItem) in
-                let indexPath = IndexPath(row: row, section: 0)
-                switch item.type {
-                case .create:
-                    let cell = collectionView.dequeueReusableCell(NewDocumentCell.self, indexPath: indexPath)
-                    return cell
-                    
-                case .placeholder:
-                    let cell = collectionView.dequeueReusableCell(DocumentPlaceholderCell.self, indexPath: indexPath)
-                    return cell
-                    
-                case let .document(displayData):
-                    let cell = collectionView.dequeueReusableCell(DocumentCell.self, indexPath: indexPath)
-                    cell.configure(displayData)
-                    return cell
-                }
+            .bind(to: collectionView.rx.items) { [unowned self] (collectionView, row: Int, item: DocumentItem) in
+                self.cellFactory(collectionView: collectionView, row: row, item: item)
             }
             .disposed(by: disposeBag)
+    }
+    
+    private func cellFactory(collectionView: UICollectionView, row: Int, item: DocumentItem) -> UICollectionViewCell {
+        let indexPath = IndexPath(row: row, section: 0)
+        switch item.type {
+        case .create:
+            let cell = collectionView.dequeueReusableCell(NewDocumentCell.self, indexPath: indexPath)
+            return cell
+            
+        case .placeholder:
+            let cell = collectionView.dequeueReusableCell(DocumentPlaceholderCell.self, indexPath: indexPath)
+            return cell
+            
+        case let .document(displayData):
+            let cell = collectionView.dequeueReusableCell(DocumentCell.self, indexPath: indexPath)
+            cell.configure(displayData)
+            return cell
+        }
     }
 }

@@ -35,7 +35,7 @@ final class DocumentCell: UICollectionViewCell {
         reset()
     }
     
-    func configure(_ displayData: DocumentItem.DisplayData) {
+    func configure(_ displayData: DocumentItemDisplayData) {
         titleLabel.text = displayData.title
         dateLabel.text = displayData.createdOn
         pageCountLabel.text = displayData.pageCount

@@ -18,6 +18,8 @@ final class DocumentsViewModel {
     
     private let disposeBag = DisposeBag()
     private let createItem = DocumentItem(identity: UUID(), type: .create)
+    
+    // FIXME: Use Core Data
     private let placeholderItems = [DocumentItem](repeating: DocumentItem.makePlaceholder(), count: 5)
     private let documentItems = [DocumentItem](repeating: DocumentItem.makeDocument(), count: 2)
     
@@ -33,18 +35,13 @@ final class DocumentsViewModel {
             
             if self.documentItems.count < self.placeholderItems.count {
                 items.append(contentsOf: self.documentItems)
-                self.placeholderItems[0 ..< self.documentItems.count].forEach { items.append($0) }
+                self.placeholderItems[0 ... self.documentItems.count].forEach { items.append($0) }
             }
             
             observerOfDocumentItem.onNext(items)
             observerOfDocumentItem.onCompleted()
             return Disposables.create()
         }
-        
-        items
-            .debug()
-            .subscribe()
-            .disposed(by: disposeBag)
     }
 }
 
@@ -56,9 +53,9 @@ final class DocumentsViewModel {
         }
         
         static func makeDocument() -> DocumentItem {
-            let displayData = DocumentItem.DisplayData(title: "Song for the Old Ones",
-                                                       createdOn: "02 April, 2019",
-                                                       pageCount: "4 Pages")
+            let displayData = DocumentItemDisplayData(title: "Song for the Old Ones",
+                                                      createdOn: "02 April, 2019",
+                                                      pageCount: "4 Pages")
             return DocumentItem(identity: UUID(),
                                 type: .document(displayData))
         }

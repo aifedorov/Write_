@@ -26,7 +26,7 @@ opt_in_rules:
   - switch_case_on_newline
   - unneeded_parentheses_in_closure_argument
 excluded:
-  - Carthage
+  - Write_Tests
   - Pods
   - Write_/Resources/Generated/R.generated.swift
 identifier_name:

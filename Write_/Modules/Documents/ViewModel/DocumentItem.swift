@@ -9,21 +9,21 @@
 import Foundation
 import RxDataSources
 
+struct DocumentItemDisplayData {
+    let title: String
+    let createdOn: String
+    let pageCount: String
+}
+
+enum DocumentItemType {
+    case create
+    case placeholder
+    case document(DocumentItemDisplayData)
+}
+
 struct DocumentItem: IdentifiableType {
-    struct DisplayData {
-        let title: String
-        let createdOn: String
-        let pageCount: String
-    }
-    
-    enum `Type` {
-        case create
-        case placeholder
-        case document(DisplayData)
-    }
-    
     let identity: UUID
-    let type: Type
+    let type: DocumentItemType
 }
 
 // MARK: - Equatable
